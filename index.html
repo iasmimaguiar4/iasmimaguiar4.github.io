@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário sobre Hábitos Musicais</title>
+        <style>
+            body {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                background-color: #121212; 
+                padding: 20px;
+                color: #e0e0e0;
+            }
+    
+            form {
+                max-width: 700px;
+                margin: 0 auto;
+                background: #1e1e1e; 
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+                border: 1px solid #333;
+            }
+    
+            h1 {
+                text-align: center;
+                color: #1db954;
+                margin-bottom: 25px;
+            }
+    
+            fieldset {
+                border: 1px solid #333;
+                padding: 20px;
+                margin-bottom: 25px;
+                border-radius: 8px;
+            }
+    
+            legend {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: #1db954;
+                padding: 0 10px;
+                background-color: #1e1e1e;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+    
+            input[type="text"],
+            input[type="number"],
+            select,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 15px;
+                background-color: #2a2a2a; 
+                color: #ffffff;
+                border: 1px solid #444;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+            }
+    
+            input:focus, select:focus, textarea:focus {
+                border-color: #1db954;
+                outline: none;
+            }
+    
+            textarea {
+                resize: vertical;
+            }
+    
+            button[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 14px;
+                background-color: #1db954;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 1.2em;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s;
+            }
+    
+            button[type="submit"]:hover {
+                background-color: #1ed760;
+                transform: translateY(-2px);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>🎶 Formulário sobre Hábitos Musicais</h1>
+    
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Preferências Musicais</legend>
+    
+                <label for="artista">1. Qual artista/banda você tem escutado mais recentemente?</label>
+                <input type="text" id="artista" name="artista" placeholder="Ex: Marisa Monte, The Weeknd, Legião Urbana..." required>
+    
+                <label for="genero">2. Qual é o seu gênero musical favorito?</label>
+                <input type="text" id="genero" name="genero" placeholder="Ex: Pop, Rock Clássico, Sertanejo Universitário" required>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Consumo de Música</legend>
+    
+                <label for="horas_musica">3. Quantas horas por dia, em média, você dedica a ouvir música?</label>
+                <input type="number" id="horas_musica" name="horas_musica" min="0" max="24" step="0.25" placeholder="Ex: 2.5" required>
+    
+                <label for="plataforma">4. Qual plataforma de streaming de música você mais utiliza?</label>
+                <select id="plataforma" name="plataforma" required>
+                    <option value="" disabled selected>Escolha sua plataforma principal</option>
+                    <option value="spotify">Spotify</option>
+                    <option value="youtube_music">YouTube Music</option>
+                    <option value="deezer">Deezer</option>
+                    <option value="apple_music">Apple Music</option>
+                    <option value="outra">Outra</option>
+                </select>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Envolvimento e Opiniões</legend>
+    
+                <label for="importancia_musica">5. A música é importante para a sua rotina diária?</label>
+                <select id="importancia_musica" name="importancia_musica" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="essencial">Sim, é essencial</option>
+                    <option value="bom_acompanhamento">É um bom acompanhamento</option>
+                    <option value="as_vezes_escuto">Raramente escuto</option>
+                </select>
+    
+                <label for="comentarios_musica">6. Comentários adicionais sobre seu gosto musical ou hábitos:</label>
+                <textarea id="comentarios_musica" name="comentarios_musica" rows="4" placeholder="Algum show memorável? Uma música que te marcou?"></textarea>
+            </fieldset>
+    
+            <button type="submit">Enviar Respostas Musicais</button>
+    
+        </form>
+    
+    </body>
+    </html>
+</head>
+<body>
+  
